@@ -1,4 +1,4 @@
-#NOTE:
+# NOTE:
 	
 	COURSERA - Front-End JavaScript Frameworks: Angular
 	
