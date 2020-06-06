@@ -15,6 +15,9 @@
 3. Install Angular-Flexbox
 	-> npm install --save @angular/flex-layout@6.0.0-beta.18
 
+4. Install Font-Awesome:
+	-> npm install font-awesome@4.7.0 --save
+
 
 
 
