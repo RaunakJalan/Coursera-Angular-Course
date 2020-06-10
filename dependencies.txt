@@ -18,6 +18,9 @@
 4. Install Font-Awesome:
 	-> npm install font-awesome@4.7.0 --save
 
+5. Install JSON server:
+	-> npm install -g json-server
+
 
 
 

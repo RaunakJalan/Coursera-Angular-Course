@@ -16,7 +16,7 @@
 				</mat-card-title>
 			</mat-card-header>
 			
-			<img mat-card-image src={{dish.image}} alt={{dish.name}}>
+			<img mat-card-image src="{{BaseURL + dish.image}}" alt={{dish.name}}>
 			
 			<mat-card-content>
 				<p>{{dish.description}}</p>
@@ -37,13 +37,13 @@
 		
 		</mat-card>
 	  
-	  <div fxFlex [hidden]="dish">
+  </div>
+	
+	<div fxFlex [hidden]="dish">
 		
 		<mat-spinner></mat-spinner> <h4>Loading . . . Please Wait!</h4>
 		
 	</div>
-	  
-  </div>
 
   <div fxFlex="40" *ngIf="dish">
 	  

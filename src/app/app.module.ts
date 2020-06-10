@@ -17,6 +17,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -36,6 +38,8 @@ import { LeaderService } from './services/leader.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
+
+import { baseURL } from './shared/baseurl';
 
 
 @NgModule({
@@ -57,6 +61,8 @@ import { LoginComponent } from './login/login.component';
 	FormsModule,
 	ReactiveFormsModule,
 	AppRoutingModule,
+	HttpClientModule,
+	HttpModule,
 	MatToolbarModule,
 	MatListModule,
 	MatGridListModule,
@@ -74,7 +80,8 @@ import { LoginComponent } from './login/login.component';
   providers: [
 	  DishService,
 	  PromotionService,
-	  LeaderService
+	  LeaderService,
+	  { provide: 'BaseURL', useValue: baseURL }
   ],
 	entryComponents: [
 		LoginComponent	
